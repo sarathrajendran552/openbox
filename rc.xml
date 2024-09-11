@@ -35,7 +35,7 @@
     <primaryMonitor/>
   </placement>
   <theme>
-    <name>Natura</name>
+    <name>Nightmare</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
         available characters are NDSLIMC, each can occur at most once.
@@ -47,7 +47,7 @@
         S: shade (roll up/down)
         D: omnipresent (on all desktops).
     -->
-    <keepBorder>yes</keepBorder>
+    <keepBorder>no</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>sans</name>
@@ -178,31 +178,6 @@
         <desktop>4</desktop>
       </action>
     </keybind>
-    <keybind key="W-t">
-      <action name="Desktop">
-        <desktop>5</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-y">
-      <action name="Desktop">
-        <desktop>6</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-u">
-      <action name="Desktop">
-        <desktop>7</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-i">
-      <action name="Desktop">
-        <desktop>8</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-o">
-      <action name="Desktop">
-        <desktop>9</desktop>
-      </action>
-    </keybind>
     <!-- Move Window to Desktop -->
     <keybind key="W-S-q">
       <action name="SendToDesktop">
@@ -222,31 +197,6 @@
     <keybind key="W-S-r">
       <action name="SendToDesktop">
         <to>4</to>
-      </action>
-    </keybind>
-    <keybind key="W-S-t">
-      <action name="SendToDesktop">
-        <to>5</to>
-      </action>
-    </keybind>
-    <keybind key="W-S-y">
-      <action name="SendToDesktop">
-        <to>6</to>
-      </action>
-    </keybind>
-    <keybind key="W-S-u">
-      <action name="SendToDesktop">
-        <to>7</to>
-      </action>
-    </keybind>
-    <keybind key="W-S-i">
-      <action name="SendToDesktop">
-        <to>8</to>
-      </action>
-    </keybind>
-    <keybind key="W-S-o">
-      <action name="SendToDesktop">
-        <to>9</to>
       </action>
     </keybind>
     <!-- <keybind key="W-d"> <action name="ToggleShowDesktop"/> </keybind> -->
@@ -492,6 +442,85 @@
     </keybind>
     <keybind key="W-S-f">
       <action name="ToggleFullscreen"/>
+    </keybind>
+    <!-- Shifting windows to position -->
+    <keybind key="A-p">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>-10</x>
+        <!-- Move the window to the right edge -->
+        <y>0</y>
+        <!-- Move the window to the top edge -->
+        <width>50%</width>
+        <!-- Resize to half the screen width -->
+        <height>50%</height>
+        <!-- Resize to half the screen height -->
+      </action>
+    </keybind>
+    <keybind key="A-o">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>50%</x>
+        <!-- Move the window to the right half -->
+        <y>50%</y>
+        <!-- Move the window to the bottom half -->
+        <width>50%</width>
+        <!-- Resize to half the screen width -->
+        <height>50%</height>
+        <!-- Resize to half the screen height -->
+      </action>
+    </keybind>
+    <keybind key="A-i">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <!-- Move the window to the left edge -->
+        <y>50%</y>
+        <!-- Move the window to the bottom half -->
+        <width>50%</width>
+        <!-- Resize to half the screen width -->
+        <height>50%</height>
+        <!-- Resize to half the screen height -->
+      </action>
+    </keybind>
+    <keybind key="A-u">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <!-- Move the window to the left edge -->
+        <y>0</y>
+        <!-- Move the window to the top edge -->
+        <width>50%</width>
+        <!-- Resize to half the screen width -->
+        <height>50%</height>
+        <!-- Resize to half the screen height -->
+      </action>
+    </keybind>
+    <keybind key="A-y">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>50%</x>
+        <!-- Move the window to the right half -->
+        <y>0</y>
+        <!-- Keep the window at the top edge -->
+        <width>50%</width>
+        <!-- Resize to half the screen width -->
+        <height>100%</height>
+        <!-- Resize to full screen height -->
+      </action>
+    </keybind>
+    <keybind key="A-t">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <!-- Move the window to the left edge -->
+        <y>0</y>
+        <!-- Keep the window at the top edge -->
+        <width>50%</width>
+        <!-- Resize to half the screen width -->
+        <height>100%</height>
+        <!-- Resize to full screen height -->
+      </action>
     </keybind>
     <!-- Keybindings for running applications -->
     <keybind key="W-z">
